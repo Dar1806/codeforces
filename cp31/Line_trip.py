@@ -1,9 +1,7 @@
-for caca in range(int(input())):
+for x in range(int(input())):
 	last_nbr = int(input().split(" ")[1])
 	n = list(map(int, input().split(" ")))
-	liters = 0
-	if len(n) == 1:
-		liters = n[0]
+	liters = n[0]
 	for nlist in range(1, len(n)):
 		temp = n[nlist] - n[nlist - 1]
 		if temp > liters:
