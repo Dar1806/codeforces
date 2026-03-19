@@ -7,6 +7,6 @@ for x in range(int(input())):
 		if temp > liters:
 			liters = temp
 	nlist = len(n) - 1
-	if liters < (last_nbr - n[nlist]) * 2:
+	if (liters < (last_nbr - n[nlist]) * 2):
 		liters = (last_nbr - n[nlist]) * 2
 	print(liters)
